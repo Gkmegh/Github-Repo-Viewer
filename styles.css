@@ -1,0 +1,171 @@
+@import url('variable.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    transition: all .3s ease-in-out;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 2000px;
+    min-width: 300px;    
+}
+
+.container {
+    margin: 2rem;
+    border: 2px solid #000; 
+}
+.profile{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.profile-image{
+    padding: 3rem 2rem 2rem 8rem;
+}
+.profile-image img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    border: 5px #b9b9b9 solid;  
+}
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 1rem 0 0 8rem ;
+    gap: 1.5rem;
+    font-size: 16px;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.github-link{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.github-link a{
+     font-size: 14px;
+     text-decoration: none;
+     color: var(--color-black);
+}
+
+/* Add styles for the search container */
+#search-container {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#search-container button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    display: none;
+}
+
+#repositories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8rem;
+    height: 100%;
+    overflow-y: auto; 
+    margin-top: 2%;
+}
+
+
+.repository {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    height: 14rem;
+    border: 3px solid #696969;
+    margin: 10px 0;
+    padding-left: 2rem;
+    overflow: hidden;
+    font-size: 16px;
+    gap: 1rem;
+    box-shadow: 30px 25px 12px -12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.repository h2{
+    margin-top: 1rem;
+    color: var(--color-skyblue);
+}
+
+
+.topic {
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    margin-bottom: 1rem;
+    background-color:var(--color-skyblue);
+    color: var(--color-white);
+    border-radius: 4px;
+    border-radius: 8px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 4rem 0;
+}
+
+.page-link {
+    cursor: pointer;
+    padding: 12px 12px;
+    font-size: 16px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-item {
+    border: 1px solid #a1a1a1;
+    cursor: pointer;
+    color: var(--color-skyblue);
+}
+
+.page-item:hover,.page-item.active {
+    background-color: var(--color-skyblue);
+    color: var(--color-white);
+}
